@@ -1,3 +1,6 @@
+#Emacs config based on pure
+add c/c++ support
+
 # A reasonable Emacs config
 
 This is my emacs configuration tree, continually used and tweaked
