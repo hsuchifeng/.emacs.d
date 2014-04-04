@@ -1,0 +1,380 @@
+;; Object sys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sys/"
+  :tables (list 
+   (semanticdb-table "cdefs.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_SYS_CDEFS_H_" variable (:constant-flag t) nil [1845 1858])
+            ("__BEGIN_DECLS" variable (:constant-flag t) nil [1956 1969])
+            ("__END_DECLS" variable (:constant-flag t) nil [1978 1989])
+            ("__GNUC_PREREQ__" variable (:constant-flag t) nil [3772 3787])
+            ("__P" variable (:constant-flag t) nil [5090 5093])
+            ("__CONCAT" variable (:constant-flag t) nil [5147 5155])
+            ("__STRING" variable (:constant-flag t) nil [5176 5184])
+            ("__const" variable (:constant-flag t) nil [5238 5245])
+            ("__inline" variable (:constant-flag t) nil [5293 5301])
+            ("__signed" variable (:constant-flag t) nil [5310 5318])
+            ("__volatile" variable (:constant-flag t) nil [5327 5337])
+            ("const" variable (:constant-flag t) nil [5828 5833])
+            ("inline" variable (:constant-flag t) nil [5874 5880])
+            ("signed" variable (:constant-flag t) nil [5889 5895])
+            ("volatile" variable (:constant-flag t) nil [5904 5912])
+            ("_Alignas" variable (:constant-flag t) nil [8362 8370])
+            ("_Alignof" variable (:constant-flag t) nil [8396 8404])
+            ("_Noreturn" variable (:constant-flag t) nil [8430 8439])
+            ("_Thread_local" variable (:constant-flag t) nil [8457 8470])
+            ("_Static_assert" variable (:constant-flag t) nil [8701 8715])
+            ("__malloc_like" variable (:constant-flag t) nil [9596 9609])
+            ("__pure" variable (:constant-flag t) nil [9618 9624])
+            ("__always_inline" variable (:constant-flag t) nil [9790 9805])
+            ("__noinline" variable (:constant-flag t) nil [9904 9914])
+            ("__nonnull" variable (:constant-flag t) nil [10016 10025])
+            ("__fastcall" variable (:constant-flag t) nil [10126 10136])
+            ("__returns_twice" variable (:constant-flag t) nil [10244 10259])
+            ("__restrict" variable (:constant-flag t) nil [11245 11255])
+            ("__predict_true" variable (:constant-flag t) nil [12679 12693])
+            ("__predict_false" variable (:constant-flag t) nil [12717 12732])
+            ("__hidden" variable (:constant-flag t) nil [12916 12924])
+            ("__exported" variable (:constant-flag t) nil [12933 12943])
+            ("__offsetof" variable (:constant-flag t) nil [13173 13183])
+            ("__rangeof" variable (:constant-flag t) nil [13501 13510])
+            ("__containerof" variable (:constant-flag t) nil [14020 14033])
+            ("__printflike" variable (:constant-flag t) nil [14689 14701])
+            ("__scanflike" variable (:constant-flag t) nil [14800 14811])
+            ("__format_arg" variable (:constant-flag t) nil [14909 14921])
+            ("__strfmonlike" variable (:constant-flag t) nil [14979 14992])
+            ("__strftimelike" variable (:constant-flag t) nil [15092 15106])
+            ("__printf0like" variable (:constant-flag t) nil [15494 15507])
+            ("__GLOBL1" variable (:constant-flag t) nil [16616 16624])
+            ("__GLOBL" variable (:constant-flag t) nil [16662 16669])
+            ("__IDSTRING" variable (:constant-flag t) nil [17094 17104])
+            ("__FBSDID" variable (:constant-flag t) nil [17497 17505])
+            ("__RCSID" variable (:constant-flag t) nil [17648 17655])
+            ("__RCSID_SOURCE" variable (:constant-flag t) nil [17811 17825])
+            ("__SCCSID" variable (:constant-flag t) nil [17983 17991])
+            ("__COPYRIGHT" variable (:constant-flag t) nil [18143 18154])
+            ("__DECONST" variable (:constant-flag t) nil [18288 18297])
+            ("__DEVOLATILE" variable (:constant-flag t) nil [18387 18399])
+            ("__DEQUALIFY" variable (:constant-flag t) nil [18491 18502])
+            ("__POSIX_VISIBLE" variable (:constant-flag t) nil [22281 22296])
+            ("__XSI_VISIBLE" variable (:constant-flag t) nil [22313 22326])
+            ("__BSD_VISIBLE" variable (:constant-flag t) nil [22340 22353])
+            ("__ISO_C_VISIBLE" variable (:constant-flag t) nil [22365 22380])
+            ("__has_feature" variable (:constant-flag t) nil [22432 22445])
+            ("__has_include" variable (:constant-flag t) nil [22488 22501])
+            ("__has_builtin" variable (:constant-flag t) nil [22544 22557]))          
+    :file "cdefs.h"
+    :pointmax 22692
+    :fsize 22691
+    :lastmodtime '(21061 24300 0 0)
+    :unmatched-syntax '((symbol 5166 . 5167) (symbol 5161 . 5162))
+    :lexical-table 
+        '(("const")
+          ("__GLOBL1" (spp-arg-list ("sym") 16624 . 16629) . ((symbol "__asm__" 16630 . 16637) (semantic-list "(\".globl \" #sym)" 16637 . 16653)))
+          ("__const")
+          ("__nonnull" (spp-arg-list ("x") 10025 . 10028))
+          ("__containerof" (spp-arg-list ("x" "s" "m") 14033 . 14042) . ((symbol "__DEQUALIFY" 14051 . 14062) (semantic-list "(s *, (const volatile char *)(x) - __offsetof(s, m))" 14062 . 14114)))
+          ("__strfmonlike" (spp-arg-list ("fmtarg" "firstvararg") 14992 . 15013) . ((symbol "__attribute__" 15021 . 15034) (semantic-list "((__format__ (__strfmon__, fmtarg, firstvararg)))" 15034 . 15083)))
+          ("__strftimelike" (spp-arg-list ("fmtarg" "firstvararg") 15106 . 15127) . ((symbol "__attribute__" 15135 . 15148) (semantic-list "((__format__ (__strftime__, fmtarg, firstvararg)))" 15148 . 15198)))
+          ("__GLOBL" (spp-arg-list ("sym") 16669 . 16674) . ((symbol "__GLOBL1" 16675 . 16683) (semantic-list "(sym)" 16683 . 16688)))
+          ("__DEVOLATILE" (spp-arg-list ("type" "var") 18399 . 18410) . ((semantic-list "((type)(__uintptr_t)(volatile void *)(var))" 18411 . 18454)))
+          ("__ISO_C_VISIBLE" . ((number "1999" 22382 . 22386)))
+          ("_SYS_CDEFS_H_")
+          ("__signed")
+          ("__hidden")
+          ("__RCSID_SOURCE" (spp-arg-list ("s") 17825 . 17828) . ((symbol "__IDSTRING" 17829 . 17839) (semantic-list "(__CONCAT(__rcsid_source_,__LINE__),s)" 17839 . 17877)))
+          ("__BSD_VISIBLE" . ((number "1" 22355 . 22356)))
+          ("__has_builtin" (spp-arg-list ("x") 22557 . 22560) . ((number "0" 22561 . 22562)))
+          ("inline")
+          ("volatile")
+          ("_Alignas" (spp-arg-list ("x") 8370 . 8373) . ((symbol "__aligned" 8375 . 8384) (semantic-list "(x)" 8384 . 8387)))
+          ("_Noreturn" . ((symbol "__dead2" 8441 . 8448)))
+          ("__noinline")
+          ("__offsetof" (spp-arg-list ("type" "field") 13183 . 13196) . ((semantic-list "((__size_t)(__uintptr_t)((const volatile void *)&((type *)0)->field))" 13200 . 13269)))
+          ("__printflike" (spp-arg-list ("fmtarg" "firstvararg") 14701 . 14722) . ((symbol "__attribute__" 14730 . 14743) (semantic-list "((__format__ (__printf__, fmtarg, firstvararg)))" 14743 . 14791)))
+          ("__has_feature" (spp-arg-list ("x") 22445 . 22448) . ((number "0" 22449 . 22450)))
+          ("__END_DECLS")
+          ("__volatile")
+          ("__returns_twice")
+          ("__rangeof" (spp-arg-list ("type" "start" "end") 13510 . 13528) . ((semantic-list "(__offsetof(type, end) - __offsetof(type, start))" 13532 . 13581)))
+          ("__scanflike" (spp-arg-list ("fmtarg" "firstvararg") 14811 . 14832) . ((symbol "__attribute__" 14840 . 14853) (semantic-list "((__format__ (__scanf__, fmtarg, firstvararg)))" 14853 . 14900)))
+          ("__IDSTRING" (spp-arg-list ("name" "string") 17104 . 17117) . 
+              ((STATIC "static" 17118 . 17124) (CONST "const" 17125 . 17130) (CHAR "char" 17131 . 17135) (symbol "name" 17136 . 17140) (semantic-list "[]" 17140 . 17142) (symbol "__unused" 17143 . 17151) (punctuation "=" 17152 . 17153) (symbol "string" 17154 . 17160)))
+          ("__has_include" (spp-arg-list ("x") 22501 . 22504) . ((number "0" 22505 . 22506)))
+          ("__STRING" (spp-arg-list ("x") 5184 . 5187) . ((string "\"x\"" 5188 . 5191)))
+          ("__pure")
+          ("__COPYRIGHT" (spp-arg-list ("s") 18154 . 18157) . ((symbol "__IDSTRING" 18158 . 18168) (semantic-list "(__CONCAT(__copyright_,__LINE__),s)" 18168 . 18203)))
+          ("__inline")
+          ("_Alignof" (spp-arg-list ("x") 8404 . 8407) . ((symbol "__alignof" 8409 . 8418) (semantic-list "(x)" 8418 . 8421)))
+          ("_Static_assert" (spp-arg-list ("x" "y") 8715 . 8721) . ((STRUCT "struct" 8722 . 8728) (symbol "__hack" 8729 . 8735)))
+          ("__fastcall")
+          ("__FBSDID" (spp-arg-list ("s") 17505 . 17508) . ((symbol "__IDSTRING" 17509 . 17519) (semantic-list "(__CONCAT(__rcsid_,__LINE__),s)" 17519 . 17550)))
+          ("__predict_false" (spp-arg-list ("exp") 12732 . 12737) . ((semantic-list "(exp)" 12741 . 12746)))
+          ("__POSIX_VISIBLE" . ((number "200809" 22298 . 22304)))
+          ("__BEGIN_DECLS")
+          ("__CONCAT" (spp-arg-list ("x" "y") 5155 . 5160))
+          ("_Thread_local" . ((symbol "__thread" 8472 . 8480)))
+          ("__always_inline")
+          ("__format_arg" (spp-arg-list ("fmtarg") 14921 . 14929) . ((symbol "__attribute__" 14930 . 14943) (semantic-list "((__format_arg__ (fmtarg)))" 14943 . 14970)))
+          ("__RCSID" (spp-arg-list ("s") 17655 . 17658) . ((symbol "__IDSTRING" 17659 . 17669) (semantic-list "(__CONCAT(__rcsid_,__LINE__),s)" 17669 . 17700)))
+          ("__DEQUALIFY" (spp-arg-list ("type" "var") 18502 . 18513) . ((semantic-list "((type)(__uintptr_t)(const volatile void *)(var))" 18514 . 18563)))
+          ("__XSI_VISIBLE" . ((number "700" 22328 . 22331)))
+          ("__GNUC_PREREQ__" (spp-arg-list ("ma" "mi") 3787 . 3795) . ((number "0" 3796 . 3797)))
+          ("__restrict")
+          ("__predict_true" (spp-arg-list ("exp") 12693 . 12698) . ((semantic-list "(exp)" 12703 . 12708)))
+          ("__P" (spp-arg-list ("protos") 5093 . 5101) . ((semantic-list "()" 5102 . 5104)))
+          ("__malloc_like")
+          ("__exported")
+          ("__printf0like" (spp-arg-list ("fmtarg" "firstvararg") 15507 . 15528))
+          ("__SCCSID" (spp-arg-list ("s") 17991 . 17994) . ((symbol "__IDSTRING" 17995 . 18005) (semantic-list "(__CONCAT(__sccsid_,__LINE__),s)" 18005 . 18037)))
+          ("__DECONST" (spp-arg-list ("type" "var") 18297 . 18308) . ((semantic-list "((type)(__uintptr_t)(const void *)(var))" 18309 . 18349)))
+          ("signed")
+          )
+
+    )
+   (semanticdb-table "types.h"
+    :file "types.h"
+    :fsize 8922
+    :lastmodtime '(21061 24300 0 0)
+    )
+   (semanticdb-table "stat.h"
+    :file "stat.h"
+    :fsize 11301
+    :lastmodtime '(21061 24300 0 0)
+    )
+   (semanticdb-table "errno.h"
+    :file "errno.h"
+    :fsize 8025
+    :lastmodtime '(21061 24300 0 0)
+    )
+   (semanticdb-table "_null.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("NULL" variable (:constant-flag t) nil [1459 1463]))          
+    :file "_null.h"
+    :pointmax 1757
+    :fsize 1756
+    :lastmodtime '(21061 24300 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NULL" . ((semantic-list "((void *)0)" 1464 . 1475)))
+          )
+
+    )
+   (semanticdb-table "_types.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_SYS__TYPES_H_" variable (:constant-flag t) nil [1493 1507])
+            ("sys/cdefs.h" include (:system-flag t) nil [1509 1531])
+            ("machine/_types.h" include (:system-flag t) nil [1532 1559])
+            ("__blksize_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [1598 1629])
+            ("__blkcnt_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [1652 1681])
+            ("__clockid_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [1705 1735])
+            ("__cap_rights_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [1761 1795])
+            ("__fflags_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [1820 1850])
+            ("__fsblkcnt_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [1868 1900])
+            ("__fsfilcnt_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [1901 1933])
+            ("__gid_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [1934 1961])
+            ("__id_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [1962 1987])
+            ("__ino_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [2029 2056])
+            ("__key_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [2076 2098])
+            ("__lwpid_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [2129 2157])
+            ("__mode_t" type
+               (:typedef ("__uint16_t" type (:type "class") nil nil)
+                :superclasses "__uint16_t"
+                :type "typedef")
+                nil [2187 2215])
+            ("__accmode_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [2234 2259])
+            ("__nl_item" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [2285 2308])
+            ("__nlink_t" type
+               (:typedef ("__uint16_t" type (:type "class") nil nil)
+                :superclasses "__uint16_t"
+                :type "typedef")
+                nil [2309 2338])
+            ("__off_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [2356 2382])
+            ("__pid_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [2401 2427])
+            ("__rlim_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [2450 2477])
+            ("__sa_family_t" type
+               (:typedef ("__uint8_t" type (:type "class") nil nil)
+                :superclasses "__uint8_t"
+                :type "typedef")
+                nil [2599 2631])
+            ("__socklen_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [2632 2663])
+            ("__suseconds_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [2664 2692])
+            ("__timer_t" type
+               (:typedef ("__timer" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "__timer"
+                :type "typedef")
+                nil [2721 2755])
+            ("__mqd_t" type
+               (:typedef ("__mq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "__mq"
+                :type "typedef")
+                nil [2781 2810])
+            ("__uid_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [2830 2857])
+            ("__useconds_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [2858 2892])
+            ("__cpuwhich_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [2923 2949])
+            ("__cpulevel_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [2984 3010])
+            ("__cpusetid_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3045 3071])
+            ("__ct_rune_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [4008 4033])
+            ("__rune_t" type
+               (:typedef ("__ct_rune_t" type (:type "class") nil nil)
+                :superclasses "__ct_rune_t"
+                :type "typedef")
+                nil [4065 4094])
+            ("__wchar_t" type
+               (:typedef ("__ct_rune_t" type (:type "class") nil nil)
+                :superclasses "__ct_rune_t"
+                :type "typedef")
+                nil [4120 4150])
+            ("__wint_t" type
+               (:typedef ("__ct_rune_t" type (:type "class") nil nil)
+                :superclasses "__ct_rune_t"
+                :type "typedef")
+                nil [4177 4206])
+            ("__dev_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [4233 4260])
+            ("__fixpt_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [4282 4311])
+            ("__mbstate_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("__mbstate8" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [4460 4482])
+                          ("_mbstateL" variable (:type ("__int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4484 4504]))                        
+                      :type "union")
+                      nil nil)
+                :type "typedef")
+                nil [4443 4539]))          
+    :file "_types.h"
+    :pointmax 4570
+    :fsize 4569
+    :lastmodtime '(21061 24300 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_SYS__TYPES_H_")
+          )
+
+    )
+   )
+  :file "!usr!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

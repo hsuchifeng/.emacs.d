@@ -54,7 +54,7 @@
 (autoload 'markdown-mode "markdown-mode.el"
   "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
-  (cons '("\\.md" . markdown-mode) auto-mode-alist))
+      (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ;;hide show mode
 ;;(require 'hideshow)
@@ -64,7 +64,7 @@
 
 
 ;;spell check need aspell
- (setq-default ispell-program-name "aspell")
+(setq-default ispell-program-name "aspell")
 (ispell-change-dictionary "american" t)
 
 ;;key bind C x C b
@@ -90,37 +90,37 @@
   (define-key c-mode-base-map [(return)] 'newline-and-indent)
   (define-key c-mode-base-map [(f7)] 'compile)
   (define-key c-mode-base-map [(meta \`)] 'c-indent-command)
-;;  (define-key c-mode-base-map [(tab)] 'hippie-expand)
+  ;;  (define-key c-mode-base-map [(tab)] 'hippie-expand)
   (define-key c-mode-base-map [(tab)] 'my-indent-or-complete)
   (define-key c-mode-base-map [(meta ?/)] 'semantic-ia-complete-symbol-menu)
 
-    ;;预处理设置
+  ;;预处理设置
   (setq c-macro-shrink-window-flag t)
   (setq c-macro-preprocessor "cpp")
   (setq c-macro-cppflags " ")
   (setq c-macro-prompt-flag t)
   (setq hs-minor-mode t)
   (setq abbrev-mode t)
-)
+  )
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook)
 
 ;;;;我的C++语言编辑策略
 (defun my-c++-mode-hook()
   (setq tab-width 4 indent-tabs-mode nil)
   (c-set-style "stroustrup")
-;;  (define-key c++-mode-map [f3] 'replace-regexp)
-)
+  ;;  (define-key c++-mode-map [f3] 'replace-regexp)
+  )
 
 (setq semanticdb-project-roots
       (list
-        (expand-file-name "/")))
+       (expand-file-name "/")))
 
 (defun my-indent-or-complete ()
-   (interactive)
-   (if (looking-at "\\>")
+  (interactive)
+  (if (looking-at "\\>")
       (hippie-expand nil)
-      (indent-for-tab-command))
- )
+    (indent-for-tab-command))
+  )
 
 (global-set-key [(control tab)] 'my-indent-or-complete)
 
@@ -141,7 +141,7 @@
         try-complete-file-name
         try-expand-whole-kill
         )
-)
+      )
 
 (define-key c-mode-base-map [(f7)] 'compile)
 
@@ -164,3 +164,55 @@
             ))
 ;;绑定代码折叠
 (global-set-key [(f2)] 'hs-toggle-hiding)
+(prefer-coding-system 'utf-8)
+
+;;注释
+(defun qiang-comment-dwim-line (&optional arg)
+  "Replacement for the comment-dwim command.
+If no region is selected and current line is not blank and we are not at the end of the line,
+then comment current line.
+Replaces default behaviour of comment-dwim, when it inserts comment at the end of the line."
+  (interactive "*P")
+  (comment-normalize-vars)
+  (if (and (not (region-active-p)) (not (looking-at "[ \t]*$")))
+      (comment-or-uncomment-region (line-beginning-position) (line-end-position))
+    (comment-dwim arg)))
+(global-set-key "\M-;" 'qiang-comment-dwim-line)
+
+
+;;smart copy M-k and M-w
+;; Smart copy, if no region active, it simply copy the current whole line
+(defadvice kill-line (before check-position activate)
+  (if (member major-mode
+              '(emacs-lisp-mode scheme-mode lisp-mode
+                                c-mode c++-mode objc-mode js-mode
+                                latex-mode plain-tex-mode))
+      (if (and (eolp) (not (bolp)))
+          (progn (forward-char 1)
+                 (just-one-space 0)
+                 (backward-char 1)))))
+
+(defadvice kill-ring-save (before slick-copy activate compile)
+  "When called interactively with no active region, copy a single line instead."
+  (interactive (if mark-active (list (region-beginning) (region-end))
+                 (message "Copied line")
+                 (list (line-beginning-position)
+                       (line-beginning-position 2)))))
+
+(defadvice kill-region (before slick-cut activate compile)
+  "When called interactively with no active region, kill a single line instead."
+  (interactive
+   (if mark-active (list (region-beginning) (region-end))
+     (list (line-beginning-position)
+           (line-beginning-position 2)))))
+
+;; Copy line from point to the end, exclude the line break
+(defun qiang-copy-line (arg)
+  "Copy lines (as many as prefix argument) in the kill ring"
+  (interactive "p")
+  (kill-ring-save (point)
+                  (line-end-position))
+  ;; (line-beginning-position (+ 1 arg)))
+  (message "%d line%s copied" arg (if (= 1 arg) "" "s")))
+
+(global-set-key (kbd "M-k") 'qiang-copy-line)

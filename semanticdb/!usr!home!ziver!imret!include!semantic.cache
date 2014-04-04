@@ -1,0 +1,18 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "exData.hpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "exData.hpp"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(21308 9322 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!home!ziver!imret!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

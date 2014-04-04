@@ -1,0 +1,251 @@
+;; Object machine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "machine/"
+  :tables (list 
+   (semanticdb-table "_types.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_MACHINE__TYPES_H_" variable (:constant-flag t) nil [2104 2122])
+            ("__NO_STRICT_ALIGNMENT" variable (:constant-flag t) nil [2215 2236])
+            ("__int8_t" variable (:type "char") nil [2316 2331])
+            ("__uint8_t" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [2332 2365])
+            ("__int16_t" type
+               (:typedef ("short")
+                :superclasses "short"
+                :type "typedef")
+                nil [2366 2392])
+            ("__uint16_t" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [2393 2428])
+            ("__int32_t" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [2429 2453])
+            ("__uint32_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [2454 2487])
+            ("__int64_t" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [2488 2513])
+            ("__uint64_t" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [2514 2548])
+            ("__clock_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [2587 2615])
+            ("__critical_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [2634 2665])
+            ("__double_t" type
+               (:typedef ("double")
+                :superclasses "double"
+                :type "typedef")
+                nil [2666 2693])
+            ("__float_t" type
+               (:typedef ("float")
+                :superclasses "float"
+                :type "typedef")
+                nil [2694 2719])
+            ("__intfptr_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [2720 2750])
+            ("__intmax_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [2751 2780])
+            ("__intptr_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [2781 2810])
+            ("__int_fast8_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [2811 2843])
+            ("__int_fast16_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [2844 2877])
+            ("__int_fast32_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [2878 2911])
+            ("__int_fast64_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [2912 2945])
+            ("__int_least8_t" type
+               (:typedef ("__int8_t" type (:type "class") nil nil)
+                :superclasses "__int8_t"
+                :type "typedef")
+                nil [2946 2978])
+            ("__int_least16_t" type
+               (:typedef ("__int16_t" type (:type "class") nil nil)
+                :superclasses "__int16_t"
+                :type "typedef")
+                nil [2979 3013])
+            ("__int_least32_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :superclasses "__int32_t"
+                :type "typedef")
+                nil [3014 3048])
+            ("__int_least64_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [3049 3083])
+            ("__ptrdiff_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [3084 3114])
+            ("__register_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [3134 3165])
+            ("__segsz_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [3166 3194])
+            ("__size_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3226 3254])
+            ("__ssize_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [3271 3299])
+            ("__time_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [3327 3354])
+            ("__uintfptr_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3372 3404])
+            ("__uintmax_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3405 3436])
+            ("__uintptr_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3437 3468])
+            ("__uint_fast8_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [3469 3503])
+            ("__uint_fast16_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [3504 3539])
+            ("__uint_fast32_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [3540 3575])
+            ("__uint_fast64_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3576 3611])
+            ("__uint_least8_t" type
+               (:typedef ("__uint8_t" type (:type "class") nil nil)
+                :superclasses "__uint8_t"
+                :type "typedef")
+                nil [3612 3646])
+            ("__uint_least16_t" type
+               (:typedef ("__uint16_t" type (:type "class") nil nil)
+                :superclasses "__uint16_t"
+                :type "typedef")
+                nil [3647 3683])
+            ("__uint_least32_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :superclasses "__uint32_t"
+                :type "typedef")
+                nil [3684 3720])
+            ("__uint_least64_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3721 3757])
+            ("__u_register_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3758 3792])
+            ("__vm_offset_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3793 3826])
+            ("__vm_ooffset_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :superclasses "__int64_t"
+                :type "typedef")
+                nil [3827 3860])
+            ("__vm_paddr_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3861 3893])
+            ("__vm_pindex_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3894 3927])
+            ("__vm_size_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :superclasses "__uint64_t"
+                :type "typedef")
+                nil [3928 3959]))          
+    :file "_types.h"
+    :pointmax 4406
+    :fsize 4405
+    :lastmodtime '(21061 24300 0 0)
+    :unmatched-syntax '((symbol 2307 . 2315) (TYPEDEF 2299 . 2306) (symbol 2186 . 2198) (symbol 2184 . 2185) (symbol 2181 . 2183) (symbol 2179 . 2180) (punctuation 2178 . 2179) (symbol 2173 . 2178) (punctuation 2172 . 2173) (symbol 2169 . 2172) (symbol 2163 . 2168) (symbol 2158 . 2162) (symbol 2153 . 2157) (symbol 2147 . 2152) (punctuation 2146 . 2147))
+    :lexical-table 
+        '(("_MACHINE__TYPES_H_")
+          ("__NO_STRICT_ALIGNMENT")
+          )
+
+    )
+   )
+  :file "!usr!include!machine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

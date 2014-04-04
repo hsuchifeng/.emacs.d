@@ -1,0 +1,360 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "exData.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "exData.cpp"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(21308 9305 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "calcSiftFeats.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [102 121])
+            ("string" include (:system-flag t) nil [122 139])
+            ("vector" include (:system-flag t) nil [140 157])
+            ("stdexcept" include (:system-flag t) nil [158 178])
+            ("ctime" include (:system-flag t) nil [179 195])
+            ("iutility.hpp" include nil nil [197 220])
+            ("exData.hpp" include nil nil [221 242])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [244 264])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [274 283])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [284 296]))                  
+                :type "int")
+                nil [265 1268]))          
+    :file "calcSiftFeats.cpp"
+    :pointmax 1279
+    :fsize 1336
+    :lastmodtime '(21307 59822 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iutility.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IUTILITY_HPP" variable (:constant-flag t) nil [31 43])
+            ("cmath" include (:system-flag t) nil [137 153])
+            ("vector" include (:system-flag t) nil [154 171])
+            ("iostream" include (:system-flag t) nil [172 191])
+            ("fstream" include (:system-flag t) nil [192 210])
+            ("sstream" include (:system-flag t) nil [211 229])
+            ("string" include (:system-flag t) nil [230 247])
+            ("iomanip" include (:system-flag t) nil [248 266])
+            ("ios" include (:system-flag t) nil [267 281])
+            ("opencv2/core/core.hpp" include nil nil [284 316])
+            ("opencv2/highgui/highgui.hpp" include nil nil [317 355])
+            ("opencv2/nonfree/features2d.hpp" include nil nil [356 397])
+            ("opencv2/features2d/features2d.hpp" include nil nil [398 442])
+            ("opencv2/imgproc/imgproc.hpp" include nil nil [443 481])
+            ("codewordsIndex" type
+               (:members 
+                  ( ("imagePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [511 533])
+                    ("codewords" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [536 565]))                  
+                :type "struct")
+                nil [486 568])
+            ("resultIndex" type
+               (:members 
+                  ( ("imagePath" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [616 638])
+                    ("similarity" variable (:type "float") (reparse-symbol classsubparts) [643 660]))                  
+                :type "struct")
+                nil [592 663])
+            ("FEATTYPE" type
+               (:members 
+                  ( ("ENUM_SIFT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [679 689])
+                    ("ENUM_SURF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [689 699]))                  
+                :type "enum")
+                nil [665 700])
+            ("squarCosSimilarity" function
+               (:template 
+                  ( ("P" type (:type "class") nil nil))                  
+                :type "float"
+                :arguments 
+                  ( ("a1" variable
+                       (:reference 1
+                        :type ("P" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [745 751])
+                    ("a2" variable
+                       (:reference 1
+                        :type ("P" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [752 758])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [759 765]))                  )
+                nil [702 1220])
+            ("cosSimilarity" function
+               (:template 
+                  ( ("P" type (:type "class") nil nil))                  
+                :type "float"
+                :arguments 
+                  ( ("a1" variable
+                       (:reference 1
+                        :type ("P" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1293 1299])
+                    ("a2" variable
+                       (:reference 1
+                        :type ("P" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1300 1306])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [1307 1313]))                  
+                :typemodifiers ("inline"))
+                nil [1248 1360])
+            ("jointSimilarity" function
+               (:template 
+                  ( ("P" type (:type "class") nil nil))                  
+                :type "float"
+                :arguments 
+                  ( ("a1" variable
+                       (:reference 1
+                        :type ("P" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1405 1411])
+                    ("a2" variable
+                       (:reference 1
+                        :type ("P" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1411 1417])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [1418 1424]))                  )
+                nil [1365 1720])
+            ("squarDistance" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "float"
+                :arguments 
+                  ( ("a1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1771 1783])
+                    ("a2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1784 1796])
+                    ("d" variable (:type "int") (reparse-symbol arg-sub-list) [1797 1803]))                  
+                :typemodifiers ("inline"))
+                nil [1726 2089])
+            ("calcCodewords" function
+               (:arguments 
+                  ( ("feats" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2139 2179])
+                    ("center" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2185 2227])
+                    ("res" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2232 2256])
+                    ("idf" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2261 2285])
+                    ("fDemension" variable (:type "int") (reparse-symbol arg-sub-list) [2285 2301])
+                    ("usingtf" variable (:type "bool") (reparse-symbol arg-sub-list) [2305 2318])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2318 2323]))                  
+                :type "int")
+                nil [2121 4030])
+            ("calcFeats" function
+               (:arguments 
+                  ( ("img_file" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4066 4087])
+                    ("feats" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4088 4128])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4129 4138]))                  
+                :type "int")
+                nil [4052 5023])
+            ("calcSiftFeats" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5070 5086])
+                    ("res" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5087 5125]))                  
+                :type "int")
+                nil [5045 5167])
+            ("calcSurfFeats" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5194 5210])
+                    ("res" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5210 5248]))                  
+                :type "int")
+                nil [5168 5290])
+            ("calcGrtFeats" function
+               (:arguments 
+                  ( ("imgPath" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5309 5323])
+                    ("feats" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5324 5364]))                  
+                :type "int")
+                nil [5292 6118])
+            ("calcHumoments" function
+               (:arguments 
+                  ( ("imgPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6146 6166])
+                    ("vec" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6167 6191]))                  
+                :type "int")
+                nil [6128 6538]))          
+    :file "iutility.hpp"
+    :pointmax 6574
+    :fsize 6573
+    :lastmodtime '(21307 54233 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IUTILITY_HPP")
+          )
+
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("CC" variable (:default-value ("g++46" "-g" "-Wall")) nil [1 21])
+            ("INCL" variable (:default-value ("-I../include" "`pkg-config --cflags opencv libpq`")) nil [21 77])
+            ("LIBS" variable (:default-value ("`pkg-config --libs opencv libpq`")) nil [77 119])
+            ("TARGET_PATH" variable (:default-value ("../bin")) nil [119 140])
+            ("EXDATA" variable (:default-value ("exData.cpp")) nil [140 162])
+            ("BIN" variable (:default-value ("test" "calcSiftFeats" "featsKmeans")) nil [162 200])
+            ("COMMAND" variable (:default-value ("$(CC)" "$@.cpp" "$(EXDATA)" "$(INCL)" "$(LIBS)" "-o" "$(TARGET_PATH)/$@")) nil [200 272])
+            ("first" function nil nil [273 313])
+            ("all" function (:arguments ("$(BIN)")) nil [314 327])
+            ("test" function nil nil [328 397])
+            ("calcSiftFeats" function nil nil [398 476])
+            ("featsKmeans" function nil nil [477 502])
+            ("clean" function nil nil [502 535]))          
+    :file "Makefile"
+    :pointmax 915
+    :fsize 534
+    :lastmodtime '(21308 5292 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("sstream" include (:system-flag t) nil [21 39])
+            ("exData.hpp" include nil nil [41 62])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [63 83])
+            ("main" function (:type "int") nil [85 124]))          
+    :file "test.cpp"
+    :pointmax 125
+    :fsize 124
+    :lastmodtime '(21307 51518 0 0)
+    :unmatched-syntax 'nil
+    )
+    (semanticdb-table "featsKmeans.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [122 141])
+            ("vector" include (:system-flag t) nil [142 159])
+            ("stdexcept" include (:system-flag t) nil [160 180])
+            ("cstdlib" include (:system-flag t) nil [181 199])
+            ("opencv2/core/core.hpp" include nil nil [219 251])
+            ("iutility.hpp" include nil nil [261 284])
+            ("exData.hpp" include nil nil [290 311])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [323 343])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [353 362])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [363 375]))                  
+                :type "int")
+                nil [344 2088]))          
+    :file "featsKmeans.cpp"
+    :pointmax 1941
+    :fsize 2310
+    :lastmodtime '(21308 899 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!home!ziver!imret!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
