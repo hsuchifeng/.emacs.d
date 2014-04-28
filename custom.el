@@ -7,7 +7,6 @@
 (setq display-time-24hr-format 1) ; 24 小时格式
 (setq display-time-day-and-date 1) ; 显示日期
 
-
 ;;默认sh
 (setq shell-file-name "/usr/local/bin/bash")
 (autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
@@ -15,7 +14,6 @@
 
 ;;y or n mode
 (defalias 'yes-or-no-p 'y-or-n-p)
-
 
 ;;load tramp for sudo file
 (require 'tramp)
@@ -56,12 +54,8 @@
 (setq auto-mode-alist
       (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
-;;hide show mode
-;;(require 'hideshow)
-
 ;;for input method
 (global-set-key (kbd "C-SPC") nil)
-
 
 ;;spell check need aspell
 (setq-default ispell-program-name "aspell")
@@ -71,8 +65,6 @@
 (require 'ibuffer)
 (global-set-key [(f3)] 'ibuffer)
 
-
-
 ;;;; CC-mode配置  http://cc-mode.sourceforge.net/
 (require 'cc-mode)
 (c-set-offset 'inline-open 0)
@@ -80,11 +72,10 @@
 (c-set-offset 'substatement-open 0)
 
 ;;;;我的C/C++语言编辑策略
-
 (defun my-c-mode-common-hook()
   (setq tab-width 2 indent-tabs-mode nil)
   ;;; hungry-delete and auto-newline
-  (c-toggle-auto-hungry-state 1)
+  ;;;(c-toggle-auto-hungry-state 1)
   ;;按键定义
   (define-key c-mode-base-map [(control \`)] 'hs-toggle-hiding)
   (define-key c-mode-base-map [(return)] 'newline-and-indent)
